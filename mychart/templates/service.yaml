@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
-#  type: LoadBalancer
-#  externalIPs:
-#    - 192.168.1.54
+  type: LoadBalancer
+  externalIPs:
+    - 192.168.1.54
   selector:
     app: nginx
   ports:
